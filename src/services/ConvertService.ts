@@ -16,7 +16,8 @@ export const convertAPI = createApi({
         },
         headers: {
           "apikey": CONVERT_KEY
-        }
+        },
+        redirect: 'follow'
       })
     }),
   }),
