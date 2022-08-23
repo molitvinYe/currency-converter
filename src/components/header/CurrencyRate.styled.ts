@@ -11,6 +11,8 @@ export const Item = styled.li`
   padding: 0 10px;
 
   color: ${props => props.theme.palette.primary.main};
+  background-color: ${props => props.theme.palette.primary.contrastText};
+  
   border: 1px solid ${props => props.theme.palette.primary.main};
   border-radius: ${props => props.theme.borderRadius};
 
