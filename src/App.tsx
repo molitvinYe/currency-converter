@@ -1,7 +1,9 @@
 import React from 'react';
-import './App.css';
+import { convertAPI } from './services/ConvertService';
 
 function App() {
+  const {data, isLoading, error} = convertAPI.useConvertCurrencyQuery({from: "EUR", to: "UAH", amount: 1})
+
   return (
     <div></div>
   );
